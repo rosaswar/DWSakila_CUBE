@@ -1,0 +1,287 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f8d6c7e5-d32d-4fc4-842a-a86d84cc5d82" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DW Sakila View</ID>
+  <Name>DW Sakila View</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DW Sakila</DataSourceID>
+  <Schema>
+    <xs:schema id="DW_x0020_Sakila_x0020_View" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="DW_x0020_Sakila_x0020_View" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="ce4388bf-7097-4a9c-be6c-66ea84c818e2">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_FactPayment" msprop:DbTableName="FactPayment" msprop:FriendlyName="FactPayment" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="06af2dc7-c3db-4716-ad90-fbb18e43becc">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PaymentId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="PaymentId" msprop:DbColumnName="PaymentId" msprop:design-time-name="6c583c39-2cf6-4fa2-9b4a-199d8971766b" type="xs:int" />
+                  <xs:element name="CustomerId" msprop:FriendlyName="CustomerId" msprop:DbColumnName="CustomerId" msprop:design-time-name="afa29f7b-43c4-480d-9953-80e14bce13e0" type="xs:int" />
+                  <xs:element name="StaffId" msprop:FriendlyName="StaffId" msprop:DbColumnName="StaffId" msprop:design-time-name="7f8734de-2320-4a18-ad35-9245ddba497c" type="xs:unsignedByte" />
+                  <xs:element name="RentalId" msprop:FriendlyName="RentalId" msprop:DbColumnName="RentalId" msprop:design-time-name="d57f79db-1385-4707-a0c6-e4909a1a3b63" type="xs:int" />
+                  <xs:element name="Amount" msprop:FriendlyName="Amount" msprop:DbColumnName="Amount" msprop:design-time-name="74d48be8-b4cd-49d6-bafc-27dd25c271a6" type="xs:decimal" />
+                  <xs:element name="PaymentDate" msprop:FriendlyName="PaymentDate" msprop:DbColumnName="PaymentDate" msprop:design-time-name="d3bb1032-f85c-4d44-a884-4cab9578c917">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2147483647" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StoreId" msprop:FriendlyName="StoreId" msprop:DbColumnName="StoreId" msprop:design-time-name="5b03b876-8e74-46fc-a0d5-a5e427a8529c" type="xs:int" />
+                  <xs:element name="FilmId" msprop:FriendlyName="FilmId" msprop:DbColumnName="FilmId" msprop:design-time-name="2b5ca79b-3129-442c-8377-86a4bb787540" type="xs:int" />
+                  <xs:element name="PaymentDatetime" msprop:FriendlyName="PaymentDatetime" msprop:DbColumnName="PaymentDatetime" msprop:design-time-name="be7728cf-c51f-44a9-b0bf-1b6bf66ace04" type="xs:dateTime" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimStaff" msprop:DbTableName="DimStaff" msprop:FriendlyName="DimStaff" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="21361e3a-f7d5-4400-913f-cd9276ecf7d6">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="StaffId" msprop:FriendlyName="StaffId" msprop:DbColumnName="StaffId" msprop:design-time-name="a650dd7c-cf2a-45a7-a359-145bca38aacf" type="xs:unsignedByte" />
+                  <xs:element name="FirstName" msprop:FriendlyName="FirstName" msprop:DbColumnName="FirstName" msprop:design-time-name="b832359d-fd8d-4edb-81d0-080efc913d63">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LastName" msprop:FriendlyName="LastName" msprop:DbColumnName="LastName" msprop:design-time-name="c675fb1d-e62b-4be3-9559-eae9877c8851">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Picture" msprop:DataSize="2147483647" msprop:FriendlyName="Picture" msprop:DbColumnName="Picture" msprop:design-time-name="2156ee38-e0c8-48fb-9cf7-0618e0e4edf8" type="xs:base64Binary" minOccurs="0" />
+                  <xs:element name="Email" msprop:FriendlyName="Email" msprop:DbColumnName="Email" msprop:design-time-name="22c6fddd-ffd5-47c2-9527-277e2ec74ee3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Active" msprop:FriendlyName="Active" msprop:DbColumnName="Active" msprop:design-time-name="3ad9ec56-9a11-4641-bc3d-a0f1a213cd32" type="xs:boolean" />
+                  <xs:element name="Username" msprop:FriendlyName="Username" msprop:DbColumnName="Username" msprop:design-time-name="84591ea7-5540-4f2b-bc8e-8b56bc89be01">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="16" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Password" msprop:FriendlyName="Password" msprop:DbColumnName="Password" msprop:design-time-name="4f529074-aa10-4199-80d1-bd1ee06170a6" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="40" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimCategory" msprop:DbTableName="DimCategory" msprop:FriendlyName="DimCategory" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="16298aea-d2f7-42c8-9ecc-8d7961a1b3f3">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Id" msprop:DbColumnName="Id" msprop:design-time-name="5d87237e-ac26-4d67-b42c-6a7edff8ce30" type="xs:int" />
+                  <xs:element name="CategoryId" msprop:FriendlyName="CategoryId" msprop:DbColumnName="CategoryId" msprop:design-time-name="b02dbf91-14f9-4481-b421-23aefb29b13f" type="xs:unsignedByte" />
+                  <xs:element name="Name" msprop:FriendlyName="Name" msprop:DbColumnName="Name" msprop:design-time-name="129716fe-73c2-426f-8895-01beb906f47c">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FilmId" msprop:FriendlyName="FilmId" msprop:DbColumnName="FilmId" msprop:design-time-name="1608d49a-f038-42f9-9b52-fc20114ed18b" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimCustomer" msprop:DbTableName="DimCustomer" msprop:FriendlyName="DimCustomer" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="01d4f133-05fc-4407-9ae2-25fad7237283">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CustomerId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="CustomerId" msprop:DbColumnName="CustomerId" msprop:design-time-name="e4e84961-7e15-4160-8faa-2b5875c4a34f" type="xs:int" />
+                  <xs:element name="FirstName" msprop:FriendlyName="FirstName" msprop:DbColumnName="FirstName" msprop:design-time-name="cf0238c6-c937-481e-adef-3792831b905f">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LastName" msprop:FriendlyName="LastName" msprop:DbColumnName="LastName" msprop:design-time-name="f021b7cc-e820-4e7c-995a-7ede3e93b38a">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="45" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Email" msprop:FriendlyName="Email" msprop:DbColumnName="Email" msprop:design-time-name="0b9836dd-8417-4794-a0be-84ad5cd7c9b9" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Active" msprop:FriendlyName="Active" msprop:DbColumnName="Active" msprop:design-time-name="1c3bbec9-79f9-4479-9040-a77c39ed7808">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CreateDate" msprop:FriendlyName="CreateDate" msprop:DbColumnName="CreateDate" msprop:design-time-name="706eea2f-1a23-44fe-a0c4-c84a72bc391b" type="xs:dateTime" />
+                  <xs:element name="AddressId" msprop:FriendlyName="AddressId" msprop:DbColumnName="AddressId" msprop:design-time-name="3ef04137-47bf-4a47-936f-325beb7ac169" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimFilm" msprop:DbTableName="DimFilm" msprop:FriendlyName="DimFilm" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="de7fa2cf-21c3-4072-a6f2-d401c86e35a2">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FilmId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="FilmId" msprop:DbColumnName="FilmId" msprop:design-time-name="70b90bc9-0cac-4b35-8cb6-df5275b44c20" type="xs:int" />
+                  <xs:element name="Title" msprop:FriendlyName="Title" msprop:DbColumnName="Title" msprop:design-time-name="1e1621be-ff86-4d63-a835-d51787e95575">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Description" msprop:FriendlyName="Description" msprop:DbColumnName="Description" msprop:design-time-name="4b3c865b-ffd8-4e4c-a836-2a270b8d41e0" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2147483647" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ReleaseYear" msprop:FriendlyName="ReleaseYear" msprop:DbColumnName="ReleaseYear" msprop:design-time-name="87146154-d9f3-4682-a8a3-e6b14ddd4125" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="4" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Language" msprop:FriendlyName="Language" msprop:DbColumnName="Language" msprop:design-time-name="054e3e53-e609-479e-b724-bc02ea4a3de1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RentalDuration" msprop:FriendlyName="RentalDuration" msprop:DbColumnName="RentalDuration" msprop:design-time-name="4892ba6a-f2af-4840-b386-06620db17b34" type="xs:unsignedByte" />
+                  <xs:element name="RentalRate" msprop:FriendlyName="RentalRate" msprop:DbColumnName="RentalRate" msprop:design-time-name="6d68e1d8-600e-4ad8-bd70-c18a74584305" type="xs:decimal" />
+                  <xs:element name="Length" msprop:FriendlyName="Length" msprop:DbColumnName="Length" msprop:design-time-name="bc1caa31-3775-4c6d-b02e-9c273735d89a" type="xs:short" minOccurs="0" />
+                  <xs:element name="ReplacementCost" msprop:FriendlyName="ReplacementCost" msprop:DbColumnName="ReplacementCost" msprop:design-time-name="ee6b16e2-e22a-428a-98cb-6226d5fd6b25" type="xs:decimal" />
+                  <xs:element name="Rating" msprop:FriendlyName="Rating" msprop:DbColumnName="Rating" msprop:design-time-name="24ba0671-c64e-4303-9e03-649ed53b407a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SpecialFeatures" msprop:FriendlyName="SpecialFeatures" msprop:DbColumnName="SpecialFeatures" msprop:design-time-name="e198936b-9159-4fde-86e0-d0cc5155728c" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimRental" msprop:DbTableName="DimRental" msprop:FriendlyName="DimRental" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="0248bd52-d0cd-46ac-86aa-3246673b33cd">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RentalId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="RentalId" msprop:DbColumnName="RentalId" msprop:design-time-name="a451b3c7-626a-430a-9a54-f4a1e03fa41c" type="xs:int" />
+                  <xs:element name="RentalDate" msprop:FriendlyName="RentalDate" msprop:DbColumnName="RentalDate" msprop:design-time-name="001ea4ed-581a-4c5d-b63d-05c92808eaa7" type="xs:dateTime" />
+                  <xs:element name="ReturnDate" msprop:FriendlyName="ReturnDate" msprop:DbColumnName="ReturnDate" msprop:design-time-name="0c14f51c-e1ce-4623-bdb4-0500b98401ff" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="FilmId" msprop:FriendlyName="FilmId" msprop:DbColumnName="FilmId" msprop:design-time-name="0dedbba9-0e7e-4bf6-b220-c871005c5947" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimStore" msprop:DbTableName="DimStore" msprop:FriendlyName="DimStore" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="b0e67fed-0172-4ad8-9399-045114815c54">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="StoreId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="StoreId" msprop:DbColumnName="StoreId" msprop:design-time-name="3c24ca1e-3319-46b6-9bbb-70cb4dac251c" type="xs:int" />
+                  <xs:element name="ManagerStaffId" msprop:FriendlyName="ManagerStaffId" msprop:DbColumnName="ManagerStaffId" msprop:design-time-name="2d6ccd97-f746-4f62-9a6a-f56769450c63" type="xs:unsignedByte" />
+                  <xs:element name="AddressId" msprop:FriendlyName="AddressId" msprop:DbColumnName="AddressId" msprop:design-time-name="0ec29ce8-655e-4605-8f04-ed721567f91e" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactPayment" />
+          <xs:field xpath="PaymentId" />
+        </xs:unique>
+        <xs:unique name="dbo_DimStaff_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimStaff" />
+          <xs:field xpath="StaffId" />
+        </xs:unique>
+        <xs:unique name="dbo_DimCategory_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimCategory" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_DimCustomer_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimCustomer" />
+          <xs:field xpath="CustomerId" />
+        </xs:unique>
+        <xs:unique name="dbo_DimFilm_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimFilm" />
+          <xs:field xpath="FilmId" />
+        </xs:unique>
+        <xs:unique name="dbo_DimRental_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimRental" />
+          <xs:field xpath="RentalId" />
+        </xs:unique>
+        <xs:unique name="dbo_DimStore_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimStore" />
+          <xs:field xpath="StoreId" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="FactPayment-DimCustomer" msdata:parent="dbo_DimCustomer" msdata:child="dbo_FactPayment" msdata:parentkey="CustomerId" msdata:childkey="CustomerId" />
+          <msdata:Relationship name="FactPayment-DimStaff" msdata:parent="dbo_DimStaff" msdata:child="dbo_FactPayment" msdata:parentkey="StaffId" msdata:childkey="StaffId" />
+          <msdata:Relationship name="FactPayment-DimRental" msdata:parent="dbo_DimRental" msdata:child="dbo_FactPayment" msdata:parentkey="RentalId" msdata:childkey="RentalId" />
+          <msdata:Relationship name="FactPayment-DimStore" msdata:parent="dbo_DimStore" msdata:child="dbo_FactPayment" msdata:parentkey="StoreId" msdata:childkey="StoreId" />
+          <msdata:Relationship name="FactPayment-DimFilm" msdata:parent="dbo_DimFilm" msdata:child="dbo_FactPayment" msdata:parentkey="FilmId" msdata:childkey="FilmId" />
+          <msdata:Relationship name="DimCategory-DimFilm" msdata:parent="dbo_DimFilm" msdata:child="dbo_DimCategory" msdata:parentkey="FilmId" msdata:childkey="FilmId" />
+          <msdata:Relationship name="DimRental-DimFilm" msdata:parent="dbo_DimFilm" msdata:child="dbo_DimRental" msdata:parentkey="FilmId" msdata:childkey="FilmId" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <DW_x0020_Sakila_x0020_View xmlns="" />
+  </Schema>
+</DataSourceView>

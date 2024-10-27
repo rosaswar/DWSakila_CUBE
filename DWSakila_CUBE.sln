@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "DWSakila_CUBE", "DWSakila_CUBE\DWSakila_CUBE.dwproj", "{B46077A4-7436-474E-A6CF-B3D2369D174E}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "DWSakila_ETL", "DWSakila_ETL\DWSakila_ETL.dtproj", "{B505856C-352E-4180-9912-143B4B6C857F}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DWSakila", "DWSakila\DWSakila.sqlproj", "{61BFEDC1-9BC3-4BA5-AB49-17F83F22D065}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DATAWAREHOUSE", "DATAWAREHOUSE", "{C87A61A3-3883-44F1-B6E4-FFC309AD25BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ETL", "ETL", "{23CF24C0-3EE2-4CC3-BFEE-5A504542C46B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CUBO", "CUBO", "{C2C4FED8-94F2-42EE-A4E8-8E04047234B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B46077A4-7436-474E-A6CF-B3D2369D174E}.Debug|Any CPU.ActiveCfg = Development
+		{B46077A4-7436-474E-A6CF-B3D2369D174E}.Debug|Any CPU.Build.0 = Development
+		{B46077A4-7436-474E-A6CF-B3D2369D174E}.Debug|Any CPU.Deploy.0 = Development
+		{B46077A4-7436-474E-A6CF-B3D2369D174E}.Development|Any CPU.ActiveCfg = Development
+		{B46077A4-7436-474E-A6CF-B3D2369D174E}.Development|Any CPU.Build.0 = Development
+		{B46077A4-7436-474E-A6CF-B3D2369D174E}.Development|Any CPU.Deploy.0 = Development
+		{B46077A4-7436-474E-A6CF-B3D2369D174E}.Release|Any CPU.ActiveCfg = Development
+		{B46077A4-7436-474E-A6CF-B3D2369D174E}.Release|Any CPU.Build.0 = Development
+		{B46077A4-7436-474E-A6CF-B3D2369D174E}.Release|Any CPU.Deploy.0 = Development
+		{B505856C-352E-4180-9912-143B4B6C857F}.Debug|Any CPU.ActiveCfg = Development
+		{B505856C-352E-4180-9912-143B4B6C857F}.Debug|Any CPU.Build.0 = Development
+		{B505856C-352E-4180-9912-143B4B6C857F}.Development|Any CPU.ActiveCfg = Development
+		{B505856C-352E-4180-9912-143B4B6C857F}.Development|Any CPU.Build.0 = Development
+		{B505856C-352E-4180-9912-143B4B6C857F}.Release|Any CPU.ActiveCfg = Development
+		{B505856C-352E-4180-9912-143B4B6C857F}.Release|Any CPU.Build.0 = Development
+		{61BFEDC1-9BC3-4BA5-AB49-17F83F22D065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61BFEDC1-9BC3-4BA5-AB49-17F83F22D065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61BFEDC1-9BC3-4BA5-AB49-17F83F22D065}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{61BFEDC1-9BC3-4BA5-AB49-17F83F22D065}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{61BFEDC1-9BC3-4BA5-AB49-17F83F22D065}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{61BFEDC1-9BC3-4BA5-AB49-17F83F22D065}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{61BFEDC1-9BC3-4BA5-AB49-17F83F22D065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61BFEDC1-9BC3-4BA5-AB49-17F83F22D065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61BFEDC1-9BC3-4BA5-AB49-17F83F22D065}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B46077A4-7436-474E-A6CF-B3D2369D174E} = {C2C4FED8-94F2-42EE-A4E8-8E04047234B8}
+		{B505856C-352E-4180-9912-143B4B6C857F} = {23CF24C0-3EE2-4CC3-BFEE-5A504542C46B}
+		{61BFEDC1-9BC3-4BA5-AB49-17F83F22D065} = {C87A61A3-3883-44F1-B6E4-FFC309AD25BE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C0516F5-9E09-4DA8-BCAD-6CDDF21F30D3}
+	EndGlobalSection
+EndGlobal
